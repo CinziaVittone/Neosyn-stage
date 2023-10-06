@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, controls
+    </title>
+</head>
+
+<body>
+    <form name="my">
+        <input name="one" value="1">
+        <input name="two" value="2">
+    </form>
+
+    <select id="select">
+        <option value="apple">Mela</option>
+        <option value="pear">Pera</option>
+        <option value="banana">Banana</option>
+    </select>
+
+    <select id="select" multiple>
+        <option value="blues" selected>Blues</option>
+        <option value="rock" selected>Rock</option>
+        <option value="classic">Classic</option>
+    </select>
+
+    <script>
+        // form e element
+        // ottiene il form
+        let form = document.forms.my; // <form name="my"> element
+
+        // ottiene l'elemento
+        let elem = form.elements.one; // <input name="one"> element
+
+        alert(elem.value); // 1
+
+
+
+        // input e textarea
+        input.value = "Nuovo valore";
+        textarea.value = "Nuovo testo";
+
+        input.checked = true; // per una checkbox o un radio button
+
+
+
+        // select e option
+        // tutte e tre le righe di codice fanno la stessa cosa
+        select.options[2].selected = true;
+        select.selectedIndex = 2;
+        select.value = 'banana';
+        // nota bene: le options cominciano da indice zero, quindi indice 2 significa la option numero 3.
+
+        // ottiene tutti i valori selezionati dal multi-select
+        let selected = Array.from(select.options)
+            .filter(option => option.selected)
+            .map(option => option.value);
+
+        alert(selected); // blues,rock
+
+
+
+        // new Option
+        option = new Option(text, value, defaultSelected, selected);
+
+        // selezionato
+        let optionNotSelected = new Option("Testo", "value");
+        // non selezionato
+        let optionSelected = new Option("Testo", "value", true, true);
+
+
+
+    </script>
+
+</body>
+
+</html>

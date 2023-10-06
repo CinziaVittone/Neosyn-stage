@@ -1,0 +1,39 @@
+<!-- solo di esempio, solitamente non va modificato -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Refresher</title>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <meta charset="UTF-8" />
+
+  <!-- guardando la index.html del porgetto 01 si vedono solo colegamenti ma non tag script, troviamo invece il tag noscript, 
+  con messaggio di fallback se l'utente ha disabilitato il suo js, perchè react utilizza un processo di compilazione che inietta lo script nell'html -->
+  <script src="assets/scripts/app.js" defer></script>
+  <!-- defer: assicura che lo script importato venga eseguito solo dopo che il resto del doc HTML è stato letto e analizzato -->
+
+  <script src="assets/scripts/app.js" type="module"></script>
+  <!-- type="module": attributo che assicura che questo file js sia trattato come un modulo
+  in questo modo si "sblocca" una sintassi js (in app.js) come import/export(per importare/esportare altri file, moduli) -->
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/js-logo.png" alt="JavaScript logo" />
+    <h1>JavaScript Refresher</h1>
+  </header>
+
+  <ul>
+    <li>Base Syntax & Rules</li>
+    <li>Variables, Values & Operators</li>
+    <li>Functions</li>
+    <li>Objects</li>
+    <li>Arrays</li>
+    <li>Control Structures</li>
+    <li>Browser APIs & The DOM</li>
+    <li>Essential Features Used By React</li>
+    <li>Tricky Parts</li>
+  </ul>
+</body>
+
+</html>

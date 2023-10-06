@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse events</title>
+</head>
+
+<body>
+    <script>
+        // EVENTI DEL MOUSE
+        // click – quando si clicca col mouse su un elemento (i dispositivi touch lo generano tramite il tocco).
+        // contextmenu – quando si clicca col tasto destro su un elemento.
+        // mouseover / mouseout – quando il cursore passa sopra/abbandona un elemento.
+        // mousedown / mouseup – quando viene premuto/rilasciato il pulsante del mouse su un elemento.
+        // mousemove – quando si sposta il mouse.
+        // dblclick - generato quando avvengono due click sullo stesso elemento in un piccolo intervallo di tempo
+
+
+
+        // ORDINE DEGLI EVENTI
+        // un’azione dell’utente può generare eventi multipli(un semplice click genera più eventi)
+
+        // click con tasto sx
+        // mousedown   button=0
+        // mouseup     button=0
+        // click       button=0
+
+        // click con tasto dx
+        // mousedown   button=2
+        // mouseup     button=2
+        // contextmenu button=2
+
+        // click con tasto centrale
+        // mousedown   button=1
+        // mouseup     button=1
+
+
+
+        // PULSANTE DEL MOUSE
+        // Gli eventi relativi al click contengono sempre la proprietà button, 
+        // che permette di conoscere esattamente quale pulsante del mouse viene premuto.
+        
+        // Button state	                     event.button
+        // Pulsante sinistro (principale)	 0
+        // Pulsante medio (ausiliario)	     1
+        // Pulsante destro (secondario)	     2
+        // Pulsante X1 (indietro)	         3
+        // Pulsante X2 (avanti)	             4
+
+
+
+        // COORDINATE clientX/Y, pageX/Y
+        // Tutti gli eventi del mouse forniscono le coordinate in due modi:
+        // Relative alla Window: clientX e clientY.
+        // Relative al Document: pageX e pageY.
+    </script>
+
+</body>
+
+</html>

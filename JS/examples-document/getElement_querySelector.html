@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricerca</title>
+</head>
+
+<body>
+
+    <div id="elem">
+        <div di="elem-content">Element</div>
+    </div>
+
+    <ul>
+        <li>The</li>
+        <li>test</li>
+    </ul>
+    <ul>
+        <li>has</li>
+        <li>passed</li>
+    </ul>
+
+    <script>
+        // getElementById
+        // trova l'elemento tramite id, UNIVOCO
+        let elem = document.getElementById('elem');
+        elem.style.background = 'yellow';// modifico lo sfondo
+
+
+
+        // querySelectorAll
+        // trova l'elemento grazie al selettore
+        let elements = document.querySelectorAll('ul > li:last-child');
+        for (let elem of elements) {
+            console.log(elem.innerHTML); // "test", "passed"
+        }
+
+
+
+        // querySelector
+        // ritorna il primo elemento che combacia con il selettore CSS specificato
+
+        // matches
+        // I metodi visti finora cercavano nel DOM.
+        // non cerca nulla; controlla semplicemente se elem combacia con il selettore CSS specificato, e ritorna true o false.
+
+        // closest
+        // Gli antenati di un elemento sono: il genitore, il genitore del genitore e così via
+        // cerca l’antenato più vicino che combacia il selettore CSS specificato
+
+
+
+        // getElementsByTagName
+        // trova i tag(div in questo caso)
+        let divs = document.getElementsByTagName('div');
+
+
+
+        // getElementsByName
+        // cerca tramite il nome dell'attribut
+        
+
+        
+        // getElementsByClassName
+        // trova tramite la classe contenuta in form
+    </script>
+
+
+
+</body>
+
+</html>

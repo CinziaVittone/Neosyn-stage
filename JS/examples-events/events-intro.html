@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser events intro</title>
+</head>
+
+<body>
+    <input value="Cliccami" onclick="alert('Click!')" type="button">
+
+    <!-- handler -->
+    <input type="button" onclick="countRabbits()" value="Conta i conigli!">
+
+    <!-- this -->
+    <button onclick="alert(this.innerHTML)">Cliccami</button>
+
+    <!-- oggetto event -->
+    <input type="button" value="Cliccami" id="elem">
+
+
+    <script>
+        // EVENTI DEL MOUSE
+        // click – quando si clicca col mouse su un elemento (i dispositivi touch lo generano tramite il tocco).
+        // contextmenu – quando si clicca col tasto destro su un elemento.
+        // mouseover / mouseout – quando il cursore passa sopra/abbandona un elemento.
+        // mousedown / mouseup – quando viene premuto/rilasciato il pulsante del mouse su un elemento.
+        // mousemove – quando si sposta il mouse.
+        // dblclick - generato quando avvengono due click sullo stesso elemento in un piccolo intervallo di tempo
+
+
+
+        // EVENTI DA TASTIERA
+        // keydown e keyup – quando viene premuto e rilasciato un tasto.
+
+
+
+        // EVENTI DEGLI ELEMENTI DEL FORM
+        // submit – quando l’utente invia un <form>.
+        // focus – quando l’utente attiva il focus su un elemento, ad esempio su un <input>.
+
+
+
+        // EVENTI DEL DOCUMENT
+        // DOMContentLoaded – quando l’HTML viene caricato e processato, e la costruzione del DOM è stata completata.
+
+
+
+        // EVENTI DEL CSS
+        // transitionend – quando termina un’animazione CSS (CSS-animation).
+
+
+
+        // GESTORI DI EVENTO(HANDLER)*
+        // Per reagire agli eventi possiamo assegnare un gestore (handler). 
+        // Questo non è altro che una funzione che viene eseguita contestualmente alla generazione di un evento.
+        function countRabbits() {
+            for (let i = 1; i <= 3; i++) {
+                alert("Coniglio numero " + i);
+            }
+        }
+
+
+
+        // ACCEDERE ALL'ELEMENTO this
+        // Il valore di this all’interno di un gestore è l’elemento contenente il gestore.
+
+
+
+        // addEventListener
+        // Ecco la sintassi per aggiungere un gestore:
+        // element.addEventListener(event, handler, [options]);
+        // event: nome dell'evento(es click)
+        // handler: funzione che fa da gestore
+        // options: oggetto opzionale(once, passive ecc)
+
+
+
+        // removeEventListener
+        // element.removeEventListener(event, handler, [options]);
+
+
+
+        // OGGETTO EVENTO
+        // Quando c’è un evento, il browser crea un oggetto evento (event object), inserisce i dettagli al suo interno 
+        // e lo passa come argomento al gestore.
+        elem.onclick = function (event) {
+            // mostra il tipo di evento, l'elemento e le coordinate del click
+            alert(event.type + " su " + event.currentTarget);
+            alert("Coordinate: " + event.clientX + ":" + event.clientY);
+        };
+        // alcune prop dell'ogg event:
+        // event.type: tipo di evento(es click)
+        // event.currentTarget: elemento che ha gestito l'evento
+        // event.clientX/event.clientY: coordinate del cursore relative alla Window
+
+
+
+        // GESTORI OGGETTO handleEvent
+        // Con addEventListener possiamo assegnare non solo una funzione, ma anche un oggetto. 
+        // Quando viene generato un evento, viene chiamato il suo metodo handleEvent.
+    </script>
+
+</body>
+
+</html>

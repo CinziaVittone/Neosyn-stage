@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px
+}
+
+.box{
+  background-color: indianred;
+  height: 100px;
+}

@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    height: 100vh;/*occupa tutto lo spazio in altezza*/
+    grid-template-columns: repeat(12, 1fr);
+    /*si usa sempre il 12, viewport idealmente divisa in 12 colonne*/
+    grid-template-rows: 1fr 500px 1fr;
+    /*dimensione fissa solo al centrale, gli altri si adattano*/
+    gap: 10px;
+}
+
+.box-a {
+    background-color: red;
+    grid-column: 1/12;
+    /*ocupa le colonne da 1 a 12*/
+}
+
+.box-b {
+    background-color: orange;
+    grid-column: 1/9;
+}
+
+.box-c {
+    background-color: yellow;
+    grid-column: 9/12;
+}
+
+/* media query, al suo interno ci che deve succedere al raggiungimento di una max-width */
+@media (max-width: 667px) {
+    .box-a {
+        background-color: red;
+        grid-column: 1/12;
+    }
+
+    .box-b {
+        background-color: orange;
+        grid-column: 1/12;
+    }
+
+    .box-c {
+        background-color: yellow;
+        grid-column: 1/12;
+    }
+}

@@ -1,0 +1,102 @@
+.flex_item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.flex_item_test {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.flex_container {
+  background: #eedede;
+  height: 2000px;
+}
+
+/* set direction to row */
+.flex_container {
+  /*abilita il flex sia sul parent che sui children*/
+  display: flex;
+  flex-direction: row;
+}
+
+/* set direction to column */
+.flex_container {
+  flex-direction: column;
+}
+
+/* align elements to the left */
+/* sul parent */
+/* .flex_container{
+    align-items: flex-start;
+  } */
+/* sul child */
+.flex_item {
+  align-self: flex-start;
+}
+
+/* align elements to the right */
+/* sul parent */
+/* .flex_container{
+    align-items: flex-end;
+  } */
+/* sul child */
+.flex_item {
+  align-self: flex-end;
+}
+
+/* align elements to the center */
+/* sul parent */
+/* .flex_container{
+    align-items: center;
+  } */
+/* sul child */
+.flex_item {
+  align-self: center;
+}
+
+/* separate items with equal space between them */
+/* sul parent, 3 opzioni */
+.flex_container {
+  justify-content: space-between;
+}
+
+.flex_container {
+  justify-content: space-around;
+}
+
+/* separate items with equal space around them */
+.flex_container {
+  justify-content: space-evenly;
+}
+ 
+/* align elements vertically at the bottom */
+.flex_container {
+  justify-content: flex-end;
+}
+
+/* align elements vertically at the top */
+.flex_container {
+  justify-content: flex-start;
+}
+
+/* place a single element in the center of the page */
+.flex_item_test {
+  align-self: center;
+}

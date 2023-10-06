@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Airbnb homepage">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Airbnb">
+    <title>Case vacanze e appartamenti in affitto - Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <h3>Airbnb Stanze e oltre 50 funzioni</h3>
+        </div>
+
+        <div class="header__right">
+            <!-- By adding the <img> tag inside an <a> tag the browser can see that the image should be clickable -->
+            <a href="#"><img src="image/video_preview.png" alt="header__right__video" width="50" height="30"></a>
+            <a href="#">Riproduci il video</a>
+            <div class="vertical_line"></div>
+            <a href="#">Scopri di più</a>
+        </div>
+    </header>
+
+    <hr>
+
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="#"><img src="image/logo.png" alt="logo" width="100" height="30"></a>
+        </div>
+
+        <div class="navbar__search_filters">
+            <a href="#"><b>Ovunque</b></a href="#">
+            <div class="vertical_line1"></div>
+            <a href="#"><b>Qualunque settimana</b></a>
+            <div class="vertical_line1"></div>
+            <a href="#" class="link">Aggiungi ospiti</a>
+
+            <img class="navbar__search_filters__icon" src="image/search_icon.png" alt="navbar__search_filters__icon"
+                width="15" height="15">
+        </div>
+
+        <div class="rent">
+            <button class="button button3">
+                <a href="#"><b>Affitta con Airbnb</b></a>
+            </button>
+
+            <button class="button button2">
+                <a href="#"><img src="image/world.png" alt="world" width="20" height="20"></a>
+            </button>
+
+            <button class="button button1">
+                <img src="image/menu.png" alt="menu" width="20" height="20">
+                <img src="image/user.png" alt="user" width="20" height="20">
+            </button>
+        </div>
+    </nav>
+
+    <hr>
+
+    <section class="filters">
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/island_icon.png" alt="filters__type__icon_island" width="25" height="25">
+                <p>Isole</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/camping_icon.png" alt="filters__type__icon_camping" width="25" height="25">
+                <p>Camping</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/fire_icon.png" alt="filters__type__icon_fire" width="25" height="25">
+                <p>Di tendenza</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/castle_icon.png" alt="filters__type__icon_castle" width="25" height="25">
+                <p>Castelli</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/mulin_icon.png" alt="filters__type__icon_mulin" width="25" height="25">
+                <p>Mulini</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/piano_icon.png" alt="filters__type__icon_piano" width="25" height="25">
+                <p>Pianoforti a coda</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/sci_icon.png" alt="filters__type__icon_sci" width="25" height="25">
+                <p>Sulle piste</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/key_icon.png" alt="filters__type__icon_key" width="25" height="25">
+                <p>Novità</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/vineyard_icon.png" alt="filters__type__icon_vineyard" width="25" height="25">
+                <p>Vigneti</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/b&b_icon.png" alt="filters__type__icon_b&b" width="25" height="25">
+                <p>B&B</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/boat_icon.png" alt="filters__type__icon_boat" width="25" height="25">
+                <p>Barche</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/snow_icon.png" alt="filters__type__icon_snow" width="25" height="25">
+                <p>Polo Nord</p>
+            </a>
+        </div>
+        <div class="filters__type">
+            <a href="#">
+                <img src="image/bowling_icon.png" alt="filters__type__icon_bowing" width="25" height="25">
+                <p>Spazi per giocare</p>
+            </a>
+        </div>
+
+        <div class="filters__dialogue">
+            <img src="image/filter_icon.png" alt="filters__dialogue__icon" width="20" height="20">
+            <p>Filtri</p>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <div class="card_image">
+                <img class="card_image_preview" src="image/cap_estate.jpg" alt="preview" width="300" height="300">
+                <img class="card_image_heart_icon" src="image/heart_icon.png" alt="heart_icon" width="25" height="25">
+            </div>
+
+            <div class="card_info">
+
+                <div class="card_header_title">
+                    <h3>Cap Estate, St. Lucia</h3>
+                    <p>★4,87</p>
+                </div>
+                <div class="card_header_description">
+                    <p class="card_header_description_text">Host professionista</p>
+                    <p class="card_header_description_text">06-11 mag</p>
+                    <p><b>1.344 € </b>notte</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_image">
+                <img class="card_image_preview" src="image/colosseum.jpg" alt="preview" width="300" height="300">
+                <img class="card_image_heart_icon" src="image/heart_icon.png" alt="heart_icon" width="25" height="25">
+            </div>
+
+            <div class="card_info">
+
+                <div class="card_header_title">
+                    <h3>Roma, Italia</h3>
+                    <p>★3,97</p>
+                </div>
+                <div class="card_header_description">
+                    <p class="card_header_description_text">Host professionista</p>
+                    <p class="card_header_description_text">10-15 ago</p>
+                    <p><b>998 € </b>notte</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_image">
+                <img class="card_image_preview" src="image/california.jpg" alt="preview" width="300" height="300">
+                <img class="card_image_heart_icon" src="image/heart_icon.png" alt="heart_icon" width="25" height="25">
+            </div>
+
+            <div class="card_info">
+
+                <div class="card_header_title">
+                    <h3>California, Stati Uniti</h3>
+                    <p>★5,00</p>
+                </div>
+                <div class="card_header_description">
+                    <p class="card_header_description_text">Host professionista</p>
+                    <p class="card_header_description_text">02-07 set</p>
+                    <p><b>1.500 € </b>notte</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_image">
+                <img class="card_image_preview" src="image/lisbon.jpg" alt="preview" width="300" height="300">
+                <img class="card_image_heart_icon" src="image/heart_icon.png" alt="heart_icon" width="25" height="25">
+            </div>
+
+            <div class="card_info">
+
+                <div class="card_header_title">
+                    <h3>Lisbona, Portogallo</h3>
+                    <p>★3,57</p>
+                </div>
+                <div class="card_header_description">
+                    <p class="card_header_description_text">Host professionista</p>
+                    <p class="card_header_description_text">25-30 ott</p>
+                    <p><b>857 € </b>notte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <footer class="footer">
+        <div class="footer__left">
+            <p>© 2023 Airbnb, Inc.</p>
+            <p>-</p>
+            <a href="#">Privacy</a>
+            <p>-</p>
+            <a href="#">Termini</a>
+            <p>-</p>
+            <a href="#">Mappa del sito</a>
+            <p>-</p>
+            <a href="#">Dettagli dell' azienda</a>
+            <p>-</p>
+            <a href="#">Destinazioni</a>
+        </div>
+
+        <div class="footer__right">
+            <a href="#"><img src="image/world.png" alt="world" width="20" height="20"></a>
+            <a href="#"><b>Italiano(IT)</b></a>
+            <p><b>€</b></p>
+            <a href="#"><b>EUR</b></a>
+            <a href="#"><b>Supporto e risorse</b></a>
+            <p><b></b></p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

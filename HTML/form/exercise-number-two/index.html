@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise number two</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exercise number two</h1>
+    </header>
+
+    <form action="">
+
+        <!-- • cognome e nome (casella di testo editabile lunga 50 caratteri) -->
+        <label for="last_first_name">Cognome e nome</label>
+        <br>
+        <input type="text" id="last_first_name" name="last_first_name" required maxlength="50">
+        <br>
+
+        <!-- • sesso (selezionabile tramite due bottoni radio) -->
+        <label for="gender">Genere</label>
+        <br>
+        <input type="radio" id="gender" name="gender" value="m">
+        <label for="m">M</label>
+        <br>
+        <input type="radio" id="gender" name="gender" value="f">
+        <label for="f">F</label>
+
+        <br>
+
+        <!-- • ateneo (da scegliere da un menu che riporta le 3 università romane) -->
+        <label for="school">Ateneo</label>
+        <br>
+        <select name="school" id="school">
+            <option value="sapienza">Sapienza</option>
+            <option value="romatre">Roma Tre</option>
+            <option value="torvergata">Tor Vergata</option>
+        </select>
+        <br>
+
+        <!-- • CAP (casella di testo editabile lunga 5 caratteri) -->
+        <label for="cap">CAP</label>
+        <br>
+        <input type="text" id="cap" name="cap" required maxlength="5">
+        <br>
+
+        <!-- • studente o lavoratore (selezionabile tramite checkbox) -->
+        <label for="condition">Condizione attuale</label>
+        <br>
+        <input type="checkbox" id="condition" name="condition" value="student">
+        <label for="student">Studente</label>
+        <br>
+        <input type="checkbox" id="condition" name="condition" value="worker">
+        <label for="worker">Lavoratore</label>
+        <br>
+
+
+        <!-- • descrizione del lavoro svolto (casella di testo editabile lunga 80 caratteri) -->
+        <label for="actual_job">Lavoro svolto</label>
+        <br>
+        <textarea name="actual_job" id="actual_job" required maxlength="80" cols="30" rows="5x"></textarea>
+        <br>
+
+        <!-- • bottone di invio -->
+        <button type="submit">Invio</button>
+
+        <!-- • bottone di reset -->
+        <button type="reset">Reset</button>
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

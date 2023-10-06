@@ -1,0 +1,255 @@
+/* creare una navbar (puoi prenderti la nav che avevi creato per il clone di Airbnb) 
+che è posizionata sempre in alto anche quando fai lo scroll della pagina */
+/* nav style */
+body {
+    margin: 0px;
+    height: 6000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* z-index, la navbar ha il livello più alto, 3 */
+.navbar {
+    background-color: #f7f7f7;
+    z-index: 3;
+}
+
+.navbar__search_filters a {
+    color: black;
+    padding: 10px 0px;
+}
+
+.rent a,
+.footer__right a,
+.footer__left a,
+.filters__type a {
+    color: black
+}
+
+.vertical_line {
+    border: 1px solid #cecdcd;
+    height: 30px;
+}
+
+.vertical_line1 {
+    border: 1px solid #cecdcd;
+    height: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lemonchiffon; */
+    padding: 15px 60px;
+}
+
+.navbar__search_filters {
+    /* color: #ebebeb; */
+    display: flex;
+    border: 1px solid #ebebeb;
+    border-radius: 24px;
+    /* padding: 0px 20px; */
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+    padding-left: 20px;
+    padding-right: 5px;
+    align-items: center;
+    margin-left: 150px;
+    box-shadow: 2px 2px 2px rgb(237, 233, 233);
+    width: 400px;
+    justify-content: space-between;
+}
+
+.navbar__search_filters__icon {
+    border-radius: 50%;
+    background-color: #ff385c;
+    /* distanza bordo-altro elemento */
+    margin-left: 10px;
+    /* distanza contenuto-bordo */
+    padding: 8px
+}
+
+.rent {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid;
+    border-radius: 24px; */
+    justify-content: space-between;
+    width: 300px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    color: white;
+    padding: 10px 10px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #ebebeb;
+}
+
+.button1:hover {
+    background-color: #ebebeb;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.button2:hover {
+    background-color: #ebebeb;
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    border: 0px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.button3:hover {
+    background-color: #ebebeb;
+    color: white;
+}
+
+/* nav position */
+nav {
+    position: fixed;
+    /* distanza dal top, è l'unica che devo specificare*/
+    top: 0;
+}
+
+/* creare un footer che è posizionato sempre in basso anche quando fai lo scroll della pagina */
+/* footer style */
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: lemonchiffon; */
+    background-color: #f7f7f7;
+    /* asse y e asse x */
+    padding: 3px 60px;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* footer position */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* crea un rettangolo nel mezzo della pagina (mettici prima del semplice testo) 
+questo rettangolo nel momento in cui arrivi su quell’elemento deve posizionarsi in alto */
+/* parent */
+.text {
+    position: relative;
+    /* parte da dove termina la nav */
+    top: 80px;
+    height: 600px;
+    width: 100%;
+    border: 1px solid orange;
+}
+
+/* child */
+.text p {
+    position: absolute;
+    /* rispetto al parent */
+    top: 100px;
+    border: 1px solid green;
+}
+
+div {
+    display: flex;
+}
+
+.rettangolo {
+    z-index: 2;
+    height: 200px;
+    width: 400px;
+    background-color: crimson;
+    position: sticky;
+    /* posizione allo scroll */
+    top: 0;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+/* crea un box in un altro box più piccolo che devere essere posisionato in alto a destra */
+.box {
+    background: rebeccapurple;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* fa riferimento di default al body se non ha un parent relative */
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.box1 {
+    background-color: lavender;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* crea un box in un altro box più piccolo che devere essere posizionato al centro */
+.box2 {
+    background: blue;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* fa riferimento di default al body se non ha un parent relative */
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.box3 {
+    background-color: cyan;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    right: 100px;
+    left: 100px;
+}

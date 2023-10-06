@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard events</title>
+</head>
+
+<body>
+    <script>
+        // keypress, keydown, keyup
+
+        // keypress: quando premiamo un tasto
+        // keydown: il momento in cui premiamo il tasto
+        // keyup: quando sollevuamo il dito dopo aver premuto il bottone(quando rilasciamo il tasto)
+        document.addEventListener('keydown', event => {
+            if (event.key == 'Escape') closeModal();
+        });
+
+        // event.code e event.key
+        // La proprietà key dell’oggetto evento permette di ottenere il carattere,
+        // mentre la proprietà code ci restituisce il “codice fisico del tasto”.
+        // event.key è esattamente il carattere, che può essere diverso secondo alcuni criteri.
+        // Invece event.code, a parità di tasto, restituisce sempre lo stesso valore
+    </script>
+
+</body>
+
+</html>

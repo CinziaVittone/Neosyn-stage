@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise number one</title>
+</head>
+
+<body>
+  <!--write code here -->
+  <header>
+    <h1>Exercise number one</h1>
+  </header>
+
+  <form action="">
+
+    <!-- • cognome (casella di testo editabile lunga 40 caratteri) -->
+    <label for="last_name">Cognome</label>
+    <br>
+    <input type="text" id="last_name" name="last_name" required maxlength="40">
+    <br>
+
+    <!-- • nome (casella di testo editabile lunga 30 caratteri) -->
+    <label for="first_name">Nome</label>
+    <br>
+    <input type="text" id="first_name" name="first_name" required maxlength="30">
+    <br>
+
+    <!-- • regione di residenza (da scegliere da un menu che riporta le 5 regioni italiane) -->
+    <label for="region">Regione di residenza</label>
+    <br>
+    <select name="region" id="region">
+      <option value="piemonte">Piemonte</option>
+      <option value="sardegna">Sardegna</option>
+      <option value="lombardia">Lombardia</option>
+      <option value="puglia">Puglia</option>
+      <option value="liguria">Liguria</option>
+    </select>
+    <br>
+
+    <!-- • email (casella di testo editabile lunga 30 caratteri) -->
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email" name="email" required maxlength="30">
+    <br>
+
+    <!-- • telefono (casella di testo editabile lunga 15 caratteri) -->
+    <label for="phone">Telefono</label>
+    <br>
+    <input type="tel" id="phone" name="phone" required maxlength="15">
+    <br>
+
+    <!-- • richieste particolari (area di testo editabile di 12 righe per 60 colonne) -->
+    <label for="request">Richieste particolari</label>
+    <br>
+    <textarea name="request" id="request" cols="60" rows="12"></textarea>
+    <br>
+
+    <!-- • bottone di invio -->
+    <button type="submit">Invio</button>
+
+    <!-- • bottone di reset -->
+    <button type="reset">Reset</button>
+
+
+
+
+  </form>
+</body>
+
+</html>

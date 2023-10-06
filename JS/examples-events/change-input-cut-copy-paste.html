@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change, input, cut, copy, paste</title>
+</head>
+
+<body>
+    <!-- change -->
+    <input type="text" onchange="alert(this.value)">
+    <input type="button" value="Button">
+
+    <select onchange="alert(this.value)">
+        <option value="">Seleziona qualcosa</option>
+        <option value="1">Opzione 1</option>
+        <option value="2">Opzione 2</option>
+        <option value="3">Opzione 3</option>
+    </select>
+
+
+
+    <!-- input -->
+    <!-- <input type="text" id="input"> oninput: <span id="result"></span> -->
+
+
+
+    <!-- cut, copy, paste -->
+    <input type="text" id="input">
+
+    <script>
+        // input
+        input.oninput = function () {
+            result.innerHTML = input.value;
+        };
+
+
+
+        // cut, copy, paste
+        input.onpaste = function (event) {
+            alert("paste: " + event.clipboardData.getData('text/plain'));
+            event.preventDefault();
+        };
+
+        input.oncut = input.oncopy = function (event) {
+            alert(event.type + '-' + document.getSelection());
+            event.preventDefault();
+        };
+    </script>
+</body>
+</html>

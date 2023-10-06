@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Demon",
+      "lastName": "Salvatore",
+      "email": "demonsalvatore@gmail.com",
+      "age": 35,
+      "companyId": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Stefan",
+      "lastName": "Salvatore",
+      "email": "stefansalvatore@gmail.com",
+      "age": 31,
+      "companyId": "1"
+    },
+    {
+      "id": "3",
+      "firstName": "Klaus",
+      "lastName": "Original",
+      "email": "klausoriginal@gmail.com",
+      "age": 36,
+      "companyId": "2"
+    },
+    {
+      "id": "4",
+      "firstName": "Enzo",
+      "lastName": "St. John",
+      "email": "enzojohn@gmail.com",
+      "age": 38,
+      "companyId": "3"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "description": "Apple Inc (Apple) designs, manufactures, and markets smartphones, tablets, personal computers, and wearable devices. The company also offers software applications and related services, accessories, and third-party digital content. Apple's product portfolio includes iPhone, iPad, Mac, iPod, Apple Watch, and Apple TV."
+    },
+    {
+      "id": "2",
+      "name": "Microsoft",
+      "description": "We develop and market software, services, and hardware devices that deliver new opportunities, greater convenience, and enhanced value to people's lives. We do business worldwide and have offices in more than 100 countries."
+    },
+    {
+      "id": "3",
+      "name": "Google",
+      "description": "Google LLC (Google), a subsidiary of Alphabet Inc, is a provider of search and advertising services on the internet. The company focuses on various business areas such as advertising, search, platforms and operating systems, and enterprise and hardware products."
+    }
+  ]
+}

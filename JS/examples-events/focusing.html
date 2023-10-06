@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus, blur</title>
+    <style>
+        .invalid {
+            border-color: red;
+        }
+
+        #error {
+            color: red
+        }
+
+        .focused {
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    Inserire la mail: <input type="email" id="input">
+    <div id="error"></div>
+
+    <form id="form">
+        <input type="text" name="name" value="Name">
+        <input type="text" name="surname" value="Surname">
+    </form>
+
+    <script>
+        // focus, blur
+        input.onblur = function () {
+            if (!input.value.includes('@')) { // non si tratta di una email
+                input.classList.add('invalid');
+                error.innerHTML = 'Per favore inserire un indirizzo email valido.'
+            }
+        };
+
+        input.onfocus = function () {
+            if (this.classList.contains('invalid')) {
+                // rimuove il messaggio di "errore", in quanto l'utente vuole reinserire qualcosa
+                this.classList.remove('invalid');
+                error.innerHTML = "";
+            }
+        };
+
+
+
+        // focusin, focusout
+        // pone il gestore nella fase capturing (ultimo argomento impostato a true)
+        form.addEventListener("focusin", () => form.classList.add('focused'));
+        form.addEventListener("focusout", () => form.classList.remove('focused'));
+    </script>
+</body>
+</html>
